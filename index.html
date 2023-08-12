@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+    "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>log-in</title>
+  </head>
+  <body>
+    <main>
+      <div class="section-welcome">
+        <section class="glass container">
+          <div class="txt">
+            <h1 class="welcome">Welcome</h1>
+            <p class="txt-studio">BLUR STUDIO.</p>
+          </div>
+        </section>
+        <div class="back-glass1"></div>
+        <div class="back-glass2"></div>
+      </div>
+      <div class="modal-login">
+        <h2 class="a11y-hidden">회원가입, 로그인 또는 소셜서비스로 로그인</h2>
+        <div class="login-card">
+          <div class="cont-form-login login-glass">
+            <h3 class="tit-form">Log in<br />your account</h3>
+            <form class="form-login">
+              <label for="inpId" class="txt-hide"></label>
+              <input
+                type="text"
+                class="inp-login"
+                id="inpId"
+                placeholder="User name / e-mail"
+              />
+              <label for="inpPw" class="txt-hide"></label>
+              <input
+                type="text"
+                class="inp-login"
+                id="inpId"
+                placeholder="Password"
+              />
+              <a href="#" class="forgot">Forgot?</a>
+              <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+              <label for="chk">
+                <input type="checkbox" id="chk" />
+                <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                <i class="circle"></i>
+                <span class="text">Remember me</span>
+              </label>
+              <button type="button" class="btn-login">로그인</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

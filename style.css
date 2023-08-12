@@ -1,0 +1,188 @@
+html {
+  background-image: url(./img/ismael-reis-EZwBWe2XxKg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 기본 텍스트 색상으로 복원 */
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* 전체 플랙스 */
+main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+/* 왼쪽 카드 */
+.section-welcome {
+  display: flex;
+  flex-shrink: 1;
+  font-family: "Cormorant Garamond", serif;
+}
+.container {
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  /* margin: 20px; */
+  position: absolute;
+  left: -30px;
+  top: 150px;
+}
+.glass {
+  display: flex;
+  justify-content: flex-end;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+  color: white;
+}
+.txt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+.welcome {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 110px;
+}
+.txt-studio {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+/* back glass */
+.back-glass1 {
+  width: 514px;
+  height: 296px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(0.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+  color: white;
+
+  position: absolute;
+  left: 95px;
+  top: 299px;
+  z-index: -1;
+}
+.back-glass2 {
+  width: 990px;
+  height: 296px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+  color: white;
+
+  position: absolute;
+  left: -584px;
+  top: -30px;
+}
+
+/* ------------------------------- */
+/* 오른쪽 카드 */
+.modal-login {
+  display: flex;
+  flex-shrink: 1;
+}
+.login-card {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  /* margin: 20px; */
+  position: absolute;
+  right: 30px;
+  top: 150px;
+}
+.login-glass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+  color: white;
+}
+
+/* 체크박스 */
+.circle {
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+  display: inline-block; /* 영역적용가능해짐 */
+  width: 22px;
+  height: 22px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  border-radius: 10px; /* 모서리둥글게 처리 */
+  position: relative;
+  top: 5px;
+
+  background-image: url(https://blog.kakaocdn.net/dn/XTnSL/btrhtUIVtpB/5FungHN6IXVXG8bLbhE9Dk/img.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#chk:checked + .circle {
+  background-color: #c6c6c6;
+  border-color: #c6c6c6;
+  background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+}
+.text {
+  color: var(--767676, #767676);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 8px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+}
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk {
+  position: absolute;
+  left: -999em;
+}
